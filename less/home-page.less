@@ -5,9 +5,8 @@
   }
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .flex();
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .text-content {
       width: 48%;
@@ -21,6 +20,10 @@
       img {
         border-radius: 10px;
       }
+    }
+
+    @media @phone {
+      flex-direction: column;
     }
   }
 
@@ -51,8 +54,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(@justify: space-between);
 
     .destination {
       width: 30%;
