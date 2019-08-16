@@ -187,16 +187,9 @@ img {
     width: 100%;
   }
 }
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
 @media screen and (max-width: 500px) {
   header {
-    flex-direction: column;
+    width: 100%;
   }
 }
 header nav {
@@ -204,13 +197,22 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 100%;
 }
 @media screen and (max-width: 500px) {
   header nav {
-    width: 90%;
+    width: 100%;
+    padding: 0% 5%;
     padding-top: 5%;
+    flex-direction: column;
   }
+}
+header nav div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 5%;
 }
 .footer {
   width: 100%;

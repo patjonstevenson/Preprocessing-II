@@ -1,17 +1,39 @@
 // Navigation Styles here
 header {
-  .flex();
+  //.flex();
 
-  @media screen and (max-width: 500px) {
-    flex-direction: column;
+  //@media @phone {
+    //@media screen and (max-width: 500px) {
+    //flex-direction: column;
+  //}
+  
+      
+
+  @media @phone {
+    width: 100%;
   }
 
   nav {
-    .flex(@width: 40%);
-
-    @media screen and (max-width: 500px) {
-      width: 90%;
+    .flex(@width: 100%);
+    h1{
+      width 40%;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
       padding-top: 5%;
     }
+    @media @phone {
+    //@media screen and (max-width: 500px) {
+      width: 100%;
+      padding: 0% 5%;
+      padding-top: 5%;
+      flex-direction: column;
+      
+    }
+
+    
   }
 }
