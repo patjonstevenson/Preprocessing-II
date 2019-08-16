@@ -216,6 +216,11 @@ header nav div {
     padding: 0% 5%;
     padding-top: 5%;
     flex-direction: column;
+    justify-content: center;
+  }
+  header nav h1 {
+    padding: 0% 30%;
+    width: 100%;
   }
 }
 .footer {
