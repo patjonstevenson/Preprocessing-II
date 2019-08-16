@@ -3,11 +3,9 @@ header {
   //.flex();
 
   //@media @phone {
-    //@media screen and (max-width: 500px) {
-    //flex-direction: column;
+  //@media screen and (max-width: 500px) {
+  //flex-direction: column;
   //}
-  
-      
 
   @media @phone {
     width: 100%;
@@ -15,9 +13,12 @@ header {
 
   nav {
     .flex(@width: 100%);
-    h1{
-      width 40%;
+    align-items: baseline;
+
+    h1 {
+      width: 40%;
     }
+
     div {
       display: flex;
       flex-direction: row;
@@ -25,15 +26,13 @@ header {
       justify-content: space-between;
       padding-top: 5%;
     }
+
     @media @phone {
-    //@media screen and (max-width: 500px) {
+      //@media screen and (max-width: 500px) {
       width: 100%;
       padding: 0% 5%;
       padding-top: 5%;
       flex-direction: column;
-      
     }
-
-    
   }
 }
