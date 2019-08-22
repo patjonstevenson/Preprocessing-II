@@ -1,1 +1,17 @@
 // Mixins in here
+.flex(@justify: space-between, @align: center, @width: 100%, @direction: row) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+  width: @width;
+}
+
+.bordered() {
+  border-bottom: 2px dashed @navigation-border;
+  padding-bottom: 30px;
+}
+
+.custom-btn(@width) {
+  width: @width;
+}
